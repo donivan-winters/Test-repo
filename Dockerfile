@@ -1,2 +1,2 @@
-FROM ubuntu
-LABEL Test=1 test2=2
+FROM ubuntu:latest
+LABEL Label:"Shams test"
