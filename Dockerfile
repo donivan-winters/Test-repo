@@ -1,2 +1,2 @@
 FROM ubuntu
-LABEL Test
+LABEL Test=1 test2=2
