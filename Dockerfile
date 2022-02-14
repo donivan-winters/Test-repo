@@ -1,2 +1,2 @@
 FROM ubuntu
-CMD [bash]
+LABEL Test
