@@ -17,9 +17,9 @@ jobs:
     inputs:
       containerregistrytype: Container Registry
       dockerFile: Dockerfile
-      imageName: dtw-azdo:latest
+      imageName: dtw-azdo-yml:latest
   - task: prisma-cloud-compute-scan@3
     displayName: Prisma Cloud Compute Scan
     inputs:
       twistlockService: 'PCC SaaS Console'
-      artifact: dtw-azdo:latest
+      artifact: dtw-azdo-yml:latest
