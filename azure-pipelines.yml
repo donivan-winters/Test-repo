@@ -27,3 +27,9 @@ stages:
         dockerfile: 'Dockerfile'
         tags: |
           $(tag)
+- task: prisma-cloud-compute-scan@3
+  inputs:
+    scanType: 'images'
+    twistlockService: 'PCC SaaS Console'
+    artifact: 'nginx:latest'
+    project: 'PCC-test'
