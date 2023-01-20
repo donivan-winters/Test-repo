@@ -21,5 +21,5 @@ jobs:
   - task: prisma-cloud-compute-scan@3
     displayName: Prisma Cloud Compute Scan
     inputs:
-      twistlockService: 0f208af3-4d3b-44c1-8800-588279a22e8c
+      twistlockService: 2a373f02-274b-491e-981e-779d85ad158a
       artifact: test-repo:latest
