@@ -1,0 +1,11 @@
+# Docker
+- task: Docker@0
+  displayName: 'Build an image'
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryConnection: shamsdocker
+    dockerFile: Dockerfile
+    imageName: 'test-repo:latest'
+    includeSourceTags: true
+    includeLatestTag: true
+    
