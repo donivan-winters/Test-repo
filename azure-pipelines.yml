@@ -1,4 +1,9 @@
 # Docker
+- task: prisma-cloud-compute-scan@3
+  inputs:
+    scanType: 'images'
+    artifact: 'ubuntu-latest'
+    project: 'dtw-PCC'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
