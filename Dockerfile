@@ -1,2 +1,2 @@
-FROM ubuntu:latest
-LABEL Label:"Shams_test" Test:"2"
+FROM nginx:latest
+LABEL Label:"dtw_test" Test:"2"
