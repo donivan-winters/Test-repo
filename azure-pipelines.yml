@@ -17,7 +17,7 @@ jobs:
     inputs:
       containerregistrytype: Container Registry
       dockerFile: Dockerfile
-      imageName: test-repo:latest
+      imageName: dtwAZDO-testing:latest
   - task: prisma-cloud-compute-scan@3
     displayName: Prisma Cloud Compute Scan
     inputs:
