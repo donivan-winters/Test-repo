@@ -2,6 +2,7 @@
 - task: prisma-cloud-compute-scan@3
   inputs:
     scanType: 'images'
+    twistlockService: 'Compute SaaS'
     artifact: 'ubuntu-latest'
     project: 'dtw-PCC'
 # Build a Docker image
