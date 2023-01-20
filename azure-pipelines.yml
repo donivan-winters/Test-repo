@@ -27,7 +27,7 @@ stages:
         dockerfile: 'Dockerfile'
         tags: |
           $(tag)
-- task: prisma-cloud-compute-scan@3
+- task: PrismaCloud.build-release-task.custom-build-release-task.prisma-cloud-compute-scan@3
   inputs:
     scanType: 'images'
     twistlockService: 'PCC SaaS Console'
