@@ -1,0 +1,25 @@
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: refs/heads/main
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    vmImage: ubuntu-latest
+  steps:
+  - checkout: self
+    clean: true
+    fetchTags: false
+  - task: Docker@0
+    displayName: Build an image
+    inputs:
+      containerregistrytype: Container Registry
+      dockerFile: Dockerfile
+      imageName: test-repo:latest
+  - task: prisma-cloud-compute-scan@3
+    displayName: Prisma Cloud Compute Scan
+    inputs:
+      twistlockService: 0f208af3-4d3b-44c1-8800-588279a22e8c
+      artifact: test-repo:latest
