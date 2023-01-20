@@ -5,8 +5,6 @@ steps:
     containerregistrytype: 'Container Registry'
     dockerFile: Dockerfile
     imageName: 'test-repo:latest'
-
-steps:
 - task: PrismaCloud.build-release-task.custom-build-release-task.prisma-cloud-compute-scan@3
   displayName: 'Prisma Cloud Compute Scan'
   inputs:
